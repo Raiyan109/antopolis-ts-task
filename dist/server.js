@@ -20,7 +20,7 @@ dotenv_1.default.config();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            yield mongoose_1.default.connect(config_1.default.database_url);
+            yield mongoose_1.default.connect('mongodb://antopolis:raTn5g1qAeU5b967@ac-tkbml57-shard-00-00.suciuav.mongodb.net:27017,ac-tkbml57-shard-00-01.suciuav.mongodb.net:27017,ac-tkbml57-shard-00-02.suciuav.mongodb.net:27017/antopolis?ssl=true&replicaSet=atlas-8nw49y-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Level-2');
             console.log(config_1.default.database_url);
             app_1.default.listen(config_1.default.port, () => {
                 console.log(`app is listening on port ${config_1.default.port}`);
